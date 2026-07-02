@@ -26,7 +26,7 @@ export default function Gallery() {
         <div className="ba-grid">
           {gallery.map((g) => (
             <figure className="ba reveal" key={g.id}>
-              <div className="ba__pair">
+              <div className="ba__pair" data-hint={`${g.service} · לצפייה`}>
                 <Half src={g.before} tag="לפני" />
                 <Half src={g.after} tag="אחרי" />
               </div>
