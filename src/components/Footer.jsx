@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h5>ניווט</h5>
+            <h3>ניווט</h3>
             <ul>
               {nav.map((n) => (
                 <li key={n.id}><a href={`#${n.id}`}>{n.label}</a></li>
@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h5>יצירת קשר</h5>
+            <h3>יצירת קשר</h3>
             <ul>
               <li><a href={waHref()} target="_blank" rel="noopener"><Whatsapp className="ico" /> וואטסאפ</a></li>
               <li><a href={telHref()}><Phone className="ico" /> {site.phone.replace(/^972/, '0')}</a></li>

@@ -1,18 +1,30 @@
-import { useRef, useState } from 'react'
+import { useId, useRef, useState } from 'react'
 import { faq, waHref } from '../data/content.js'
 import { Plus, Whatsapp } from '../lib/icons.jsx'
 
 function Item({ q, a }) {
   const [open, setOpen] = useState(false)
   const body = useRef(null)
+  const uid = useId()
+  const panelId = `faq-panel-${uid}`
+  const btnId = `faq-btn-${uid}`
   return (
     <div className={`faq__item ${open ? 'open' : ''}`}>
-      <button className="faq__q" onClick={() => setOpen((v) => !v)} aria-expanded={open}>
+      <button
+        id={btnId}
+        className="faq__q"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        aria-controls={panelId}
+      >
         <span>{q}</span>
-        <span className="pm"><Plus className="ico" /></span>
+        <span className="pm" aria-hidden="true"><Plus className="ico" /></span>
       </button>
       <div
+        id={panelId}
         className="faq__a"
+        role="region"
+        aria-labelledby={btnId}
         ref={body}
         style={{ maxHeight: open ? `${body.current?.scrollHeight || 300}px` : 0 }}
       >

@@ -16,7 +16,7 @@ export default function Hygiene() {
             <div className="hyg reveal" key={i}>
               {i === 0 ? <Shield className="hyg__ic" /> : <Check className="hyg__ic" />}
               <div>
-                <h4>{p.t}</h4>
+                <h3>{p.t}</h3>
                 <p>{p.d}</p>
               </div>
             </div>

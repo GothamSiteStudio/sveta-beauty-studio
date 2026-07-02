@@ -17,13 +17,14 @@ export default function App() {
   useReveal()
   return (
     <>
+      <a className="skip-link" href="#top">דילוג לתוכן</a>
       <Header />
-      <main>
+      <main id="main">
         <Hero />
         <TrustBar />
+        <About />
         <Services />
         <Gallery />
-        <About />
         <Process />
         <Hygiene />
         <Reviews />

@@ -13,8 +13,8 @@ export default function Process() {
         <div className="proc-grid">
           {process.map((p) => (
             <div className="proc reveal" key={p.n}>
-              <div className="proc__n">{String(p.n).padStart(2, '0')}</div>
-              <h4>{p.t}</h4>
+              <div className="proc__n" aria-hidden="true">{String(p.n).padStart(2, '0')}</div>
+              <h3>{p.t}</h3>
               <p>{p.d}</p>
             </div>
           ))}

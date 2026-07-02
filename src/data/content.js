@@ -40,9 +40,9 @@ export const waHref = (suffix = '') => {
 }
 
 export const nav = [
+  { id: 'about', label: 'עליי' },
   { id: 'services', label: 'שירותים' },
   { id: 'gallery', label: 'לפני ואחרי' },
-  { id: 'about', label: 'עליי' },
   { id: 'process', label: 'איך זה עובד' },
   { id: 'reviews', label: 'המלצות' },
   { id: 'faq', label: 'שאלות נפוצות' },
