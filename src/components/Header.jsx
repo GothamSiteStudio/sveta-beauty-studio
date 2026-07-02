@@ -56,6 +56,9 @@ export default function Header() {
         <a className="btn btn--gold btn--block" href={waHref()} target="_blank" rel="noopener" onClick={close}>
           <Whatsapp className="ico" /> לתיאום תור בוואטסאפ
         </a>
+        <a className="btn btn--ghost btn--block" href={telHref()} onClick={close} style={{ marginTop: 10 }}>
+          <Phone className="ico" /> חייגי אליי
+        </a>
       </div>
     </header>
   )
