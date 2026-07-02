@@ -22,7 +22,7 @@ export default function Process() {
 
         <div className="healing reveal">
           <div style={{ padding: '18px 22px', borderBottom: '1px solid var(--line)' }}>
-            <b style={{ fontFamily: 'var(--font-serif)', color: 'var(--gold-1)', fontSize: 17 }}>
+            <b style={{ fontFamily: 'var(--font-serif)', color: 'var(--bronze)', fontSize: 17, fontWeight: 700 }}>
               מה קורה בהחלמה?
             </b>
           </div>
