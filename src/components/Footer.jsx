@@ -1,5 +1,6 @@
 import { site, nav, waHref, telHref } from '../data/content.js'
 import { Whatsapp, Phone, Instagram, Facebook, Location } from '../lib/icons.jsx'
+import { asset } from '../lib/asset.js'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -8,7 +9,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div className="footer__brand">
-            <img src="/logo/sveta-logo.svg" alt="Sveta Beauty Studio" />
+            <img src={asset('logo/sveta-logo.svg')} alt="Sveta Beauty Studio" />
             <p>
               איפור קבוע, עיצוב גבות טבעיות והדבקת ריסים ב{site.city}. מבט טבעי, יחס אישי, ותוצאה שנשארת איתך.
             </p>

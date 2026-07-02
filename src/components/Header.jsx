@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { nav, waHref, telHref } from '../data/content.js'
 import { Whatsapp, Phone, Menu, Close } from '../lib/icons.jsx'
+import { asset } from '../lib/asset.js'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -19,7 +20,7 @@ export default function Header() {
     <header className={`header ${scrolled ? 'is-scrolled' : ''}`}>
       <div className="container header__inner">
         <a className="header__logo" href="#top" aria-label="Sveta Beauty Studio">
-          <img src="/logo/sveta-logo-mark.svg" alt="Sveta Beauty Studio" />
+          <img src={asset('logo/sveta-logo-mark.svg')} alt="Sveta Beauty Studio" />
           <b>Sveta&nbsp;Beauty&nbsp;Studio</b>
         </a>
 

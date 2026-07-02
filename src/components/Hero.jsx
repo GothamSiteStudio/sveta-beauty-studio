@@ -1,5 +1,6 @@
 import { hero, waHref, telHref } from '../data/content.js'
 import { Whatsapp, Phone } from '../lib/icons.jsx'
+import { asset } from '../lib/asset.js'
 
 export default function Hero() {
   return (
@@ -32,7 +33,7 @@ export default function Hero() {
         <div className="hero__art reveal">
           <div className="halo" />
           <div className="frame">
-            <img className="mark" src="/logo/sveta-logo-mark.svg" alt="" />
+            <img className="mark" src={asset('logo/sveta-logo-mark.svg')} alt="" />
             <div className="ph-note">כאן תופיע תמונת פורטרט של סבטה / תקריב תוצאה מרשימה</div>
           </div>
         </div>

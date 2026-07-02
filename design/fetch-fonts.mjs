@@ -34,7 +34,8 @@ for (const url of urls) {
   const name = `${fam}-${String(++i).padStart(2, '0')}.woff2`;
   const bin = Buffer.from(await (await fetch(url, { headers: { 'User-Agent': UA } })).arrayBuffer());
   fs.writeFileSync(path.join(outDir, name), bin);
-  seen.set(url, `/fonts/${name}`);
+  // relative to fonts.css so it works under any base path (GitHub Pages sub-path)
+  seen.set(url, name);
 }
 
 for (const [url, local] of seen) {
