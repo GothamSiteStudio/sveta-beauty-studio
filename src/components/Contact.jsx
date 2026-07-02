@@ -14,7 +14,7 @@ export default function Contact() {
         <div className="contact__grid">
           <div className="contact__card reveal">
             <h3>מוכנה להתחיל?</h3>
-            <p>לחיצה אחת — ואנחנו מתאמות. בלי טפסים מסובכים, בלי התחייבות.</p>
+            <p>לחיצה אחת ואנחנו מתאמות. בלי טפסים מסובכים, בלי התחייבות.</p>
             <div className="contact__actions">
               <a className="btn btn--gold btn--lg btn--block" href={waHref()} target="_blank" rel="noopener">
                 <Whatsapp className="ico" /> לתיאום תור בוואטסאפ

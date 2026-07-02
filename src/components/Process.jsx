@@ -6,7 +6,7 @@ export default function Process() {
       <div className="container">
         <div className="section-head reveal">
           <span className="kicker">התהליך</span>
-          <h2>איך זה עובד — <span className="gold-text">בלי הפתעות</span></h2>
+          <h2>איך זה עובד <span className="gold-text">בלי הפתעות</span></h2>
           <p>מהרגע שנכנסת ועד התוצאה הסופית. הכול רגוע, מוסבר, ובקצב שלך.</p>
         </div>
 

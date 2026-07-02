@@ -8,7 +8,7 @@ export default function Services() {
         <div className="section-head reveal">
           <span className="kicker">הטיפולים שלי</span>
           <h2>שירותים מדויקים, <span className="gold-text">תוצאה טבעית</span></h2>
-          <p>כל טיפול מותאם אישית למבנה הפנים, לגוון ולסגנון שלך — מהמראה היומיומי ועד לשינוי שמלווה אותך לאורך זמן.</p>
+          <p>כל טיפול מותאם אישית למבנה הפנים, לגוון ולסגנון שלך מהמראה היומיומי ועד לשינוי שמלווה אותך לאורך זמן.</p>
         </div>
 
         <div className="svc-grid">

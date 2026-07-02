@@ -17,7 +17,7 @@ export default function Gallery() {
         <div className="section-head reveal">
           <span className="kicker">תיק עבודות</span>
           <h2>לפני <span className="gold-text">ואחרי</span></h2>
-          <p>התוצאה מדברת בעד עצמה. גלריה של עבודות אמיתיות — כל תמונה מתפרסמת באישור הלקוחה.</p>
+          <p>התוצאה מדברת בעד עצמה. גלריה של עבודות אמיתיות כל תמונה מתפרסמת באישור הלקוחה.</p>
         </div>
         <p className="gallery-note">
           ✦ אלו מסגרות להמחשה. כאן ייכנסו תמונות אמיתיות של לפני/אחרי (רצוי תוצאה מרפאה, 30 יום אחרי).
