@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../public/fonts/fonts.css" />
+  <link rel="stylesheet" href="print.css" />
+  <style>
+    /* Business card 90×50mm + 3mm bleed = 96×56mm */
+    @page { size: 96mm 56mm; margin: 0; }
+    html, body { width: 96mm; height: 56mm; overflow: hidden; }
+    :root { --fr-out: 5mm; --fr-in: 6.4mm; }
+    .front { position: absolute; inset: 0; display: flex;
+             align-items: center; justify-content: center; }
+    .front .logo { width: auto; height: 41mm;
+      filter: drop-shadow(0 0.6mm 1.4mm rgba(120,90,50,0.20)); }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="frame outer"></div>
+    <div class="frame inner"></div>
+    <div class="front">
+      <img class="logo" src="assets/logo-print.png" alt="Sveta Beauty Studio" />
+    </div>
+  </div>
+</body>
+</html>
