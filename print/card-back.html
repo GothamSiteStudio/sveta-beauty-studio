@@ -8,18 +8,19 @@
     @page { size: 96mm 56mm; margin: 0; }
     html, body { width: 96mm; height: 56mm; }
     :root { --fr-out: 5mm; --fr-in: 6.4mm; }
-    .back { position: absolute; inset: 8.5mm 9mm; display: flex; flex-direction: column;
+    .back { position: absolute; inset: 7mm 9mm; display: flex; flex-direction: column;
             align-items: center; text-align: center; }
-    .back .brand { font-family: var(--latin); letter-spacing: 0.13em; font-size: 8.5pt;
+    .back .mark { height: 13mm; width: auto; margin-bottom: 1.4mm;
+      filter: drop-shadow(0 0.5mm 1.1mm rgba(120,90,50,0.22)); }
+    .back .brand { font-family: var(--latin); letter-spacing: 0.16em; font-size: 8pt;
       color: var(--bronze); font-weight: 600; white-space: nowrap; }
-    .back .tag { font-family: var(--serif); font-size: 8pt; color: var(--muted); margin-top: 0.6mm; }
-    .back .divider { width: 40mm; margin: 1.9mm 0; }
-    .services { font-family: var(--serif); font-size: 8.4pt; color: var(--text); line-height: 1.5; }
+    .back .divider { width: 38mm; margin: 1.7mm 0; }
+    .services { font-family: var(--serif); font-size: 8.2pt; color: var(--text); line-height: 1.5; }
     .services .sep { color: var(--gold); margin: 0 0.35em; }
-    .contact { display: flex; flex-direction: column; align-items: center; gap: 1.6mm;
+    .contact { display: flex; flex-direction: column; align-items: center; gap: 1.5mm;
       margin-top: auto; }
-    .contact-row { font-size: 8.4pt; }
-    .contact-row .ic { width: 3.7mm; height: 3.7mm; }
+    .contact-row { font-size: 8.2pt; }
+    .contact-row .ic { width: 3.6mm; height: 3.6mm; }
     .ph { color: var(--gold-deep); font-weight: 700; } /* placeholder marker */
   </style>
 </head>
@@ -28,8 +29,8 @@
     <div class="frame outer"></div>
     <div class="frame inner"></div>
     <div class="back">
+      <img class="mark" src="assets/mark-print.png" alt="SP" />
       <div class="brand">SVETA&nbsp;BEAUTY&nbsp;STUDIO</div>
-      <div class="tag">מבט טבעי שנשאר איתך</div>
       <div class="divider"><span class="dot"></span></div>
       <div class="services">
         איפור קבוע<span class="sep">·</span>עיצוב גבות<span class="sep">·</span>הרמת גבות<span class="sep">·</span>ריסים
