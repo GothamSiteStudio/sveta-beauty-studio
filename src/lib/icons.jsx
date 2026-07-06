@@ -172,13 +172,21 @@ export function Close({ className }) {
   )
 }
 
+export function Razor({ className }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" {...s} aria-hidden="true">
+      <path d="M14 3l7 7-4 4-7-7z" />
+      <path d="M10 7l-6.5 6.5a2 2 0 0 0 0 2.8l1.2 1.2a2 2 0 0 0 2.8 0L14 11" />
+      <path d="M6 13.5l2 2M8.5 11l2 2M11 8.5l2 2" opacity="0.7" />
+    </svg>
+  )
+}
+
 export const serviceIcon = {
-  pmu: Brow,
-  lips: Lips,
-  'brows-design': Sparkle,
-  'brow-lift': Brow,
-  'brow-tint': Palette,
-  lashes: Lash,
+  pmu: Palette,
+  'brows-design': Brow,
+  'brow-lift': Sparkle,
+  'hair-removal': Razor,
 }
 
 export const trustIcon = { star: Star, gem: Gem, shield: Shield, heart: Heart }

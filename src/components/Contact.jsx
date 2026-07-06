@@ -20,7 +20,7 @@ export default function Contact() {
                 <Whatsapp className="ico" /> לתיאום תור בוואטסאפ
               </a>
               <a className="btn btn--ghost btn--lg btn--block" href={telHref()}>
-                <Phone className="ico" /> חייגי: {site.phone.replace(/^972/, '0')}
+                <Phone className="ico" /> חייגי: {site.phoneDisplay}
               </a>
             </div>
             <div className="areas" style={{ marginTop: 26 }}>

@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="footer__brand">
             <img src={asset('logo/sveta-logo.svg')} alt="Sveta Beauty Studio" />
             <p>
-              איפור קבוע, עיצוב גבות טבעיות והדבקת ריסים ב{site.city}. מבט טבעי, יחס אישי, ותוצאה שנשארת איתך.
+              עיצוב גבות טבעיות, הרמת גבות, איפור קבוע במכשור מתקדם והסרת שיער פנים ב{site.city}. מבט טבעי, יחס אישי, ותוצאה שנשארת איתך.
             </p>
             <div className="footer__soc">
               {site.instagramUrl && (
@@ -43,8 +43,8 @@ export default function Footer() {
             <h3>יצירת קשר</h3>
             <ul>
               <li><a href={waHref()} target="_blank" rel="noopener"><Whatsapp className="ico" /> וואטסאפ</a></li>
-              <li><a href={telHref()}><Phone className="ico" /> {site.phone.replace(/^972/, '0')}</a></li>
-              <li><Location className="ico" /> {site.city}</li>
+              <li><a href={telHref()}><Phone className="ico" /> {site.phoneDisplay}</a></li>
+              <li><Location className="ico" /> {site.address}</li>
             </ul>
           </div>
         </div>
