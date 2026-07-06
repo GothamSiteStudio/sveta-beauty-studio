@@ -33,8 +33,13 @@ export default function Hero() {
         <div className="hero__art reveal">
           <div className="halo" />
           <div className="frame">
-            <img className="mark" src={asset('logo/sveta-logo-mark.svg')} alt="" />
-            <div className="ph-note">כאן תופיע תמונת פורטרט של סבטה / תקריב תוצאה מרשימה</div>
+            <img
+              className="photo"
+              src={asset('photos/studio.jpg')}
+              srcSet={`${asset('photos/studio.jpg')} 900w, ${asset('photos/studio@2x.jpg')} 1300w`}
+              sizes="(max-width: 980px) 92vw, 40vw"
+              alt="הקליניקה של Sveta Beauty Studio בחדרה"
+            />
           </div>
         </div>
       </div>
