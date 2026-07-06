@@ -2,16 +2,16 @@
    Each piece sets its own @page size. Colors print exactly (no browser wash-out). */
 
 :root {
-  --cream: #e9e1d5;
-  --cream-lite: #f3ede2;
-  --ivory: #f8f4ec;
-  --gold-1: #d8b87e;
-  --gold: #c19a5e;
-  --gold-deep: #8a6630;
-  --bronze: #785528;
-  --text: #2c2419;
-  --muted: #6a5e47;
-  --line: rgba(74, 58, 34, 0.22);
+  --cream: #0a090b;
+  --cream-lite: #100e12;
+  --ivory: #151318;
+  --gold-1: #f4e2ad;
+  --gold: #dcb35f;
+  --gold-deep: #d8b463;
+  --bronze: #e6c579;
+  --text: #f4efe6;
+  --muted: #b3aa99;
+  --line: rgba(220, 179, 95, 0.30);
   --serif: 'Frank Ruhl Libre', 'Times New Roman', serif;
   --sans: 'Assistant', system-ui, sans-serif;
   --latin: 'Cormorant Garamond', 'Frank Ruhl Libre', serif;
@@ -41,10 +41,10 @@ body {
   height: 100%;
   overflow: hidden;
   background:
-    radial-gradient(120% 90% at 50% -8%, #fbf7ef 0%, transparent 55%),
-    radial-gradient(90% 70% at 100% 6%, rgba(216,184,126,0.20), transparent 55%),
-    radial-gradient(90% 80% at 0% 40%, rgba(200,168,116,0.16), transparent 55%),
-    linear-gradient(160deg, #f1ebdf, #e7dfd2 70%, #ece4d8);
+    radial-gradient(120% 90% at 50% -8%, rgba(220,179,95,0.13) 0%, transparent 55%),
+    radial-gradient(90% 70% at 100% 6%, rgba(200,150,80,0.10), transparent 55%),
+    radial-gradient(90% 80% at 0% 40%, rgba(160,120,60,0.08), transparent 55%),
+    linear-gradient(160deg, #0d0b0f, #08070a 70%, #0b090c);
 }
 
 /* gold keyline frame (double) */
