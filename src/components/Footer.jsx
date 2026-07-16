@@ -51,7 +51,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <span>© {year} Sveta Beauty Studio · כל הזכויות שמורות</span>
-          <span>עוצב ונבנה על ידי Gotham Site Studio</span>
+          <span>עוצב, נבנה ומקודם על ידי <a href="https://www.gothamsitestudio.com/he/" target="_blank" rel="noopener">Gotham Site Studio</a></span>
         </div>
       </div>
     </footer>
